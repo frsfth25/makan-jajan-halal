@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jajan Halal - Direktori Kuliner & Pendampingan UMKM</title>
+    <!-- Menggunakan Tailwind CSS agar langsung rapi tanpa ribet styling manual -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-50 font-sans text-slate-800">
+
+    <!-- 1. HEADER / NAVBAR -->
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
+            <h1 class="text-xl font-bold text-emerald-600">🍲 JajanHalal.id</h1>
+            <nav class="space-x-6 hidden md:block">
+                <a href="#beranda" class="hover:text-emerald-600 font-medium">Beranda</a>
+                <a href="#direktori" class="hover:text-emerald-600 font-medium">Direktori Kuliner</a>
+                <a href="#daftar-halal" class="hover:text-emerald-600 font-medium text-emerald-600 font-bold">Daftarkan Usaha</a>
+                <a href="#tentang" class="hover:text-emerald-600 font-medium">Tentang Kami</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- 2. BERANDA / HERO SECTION -->
+    <section id="beranda" class="bg-emerald-700 text-white py-16 px-4 text-center">
+        <div class="max-w-3xl mx-auto">
+            <h2 class="text-3xl md:text-4xl font-extxl font-bold mb-4">Jajan Tenang, Hati Senang!</h2>
+            <p class="text-emerald-100 text-lg mb-8">Temukan tempat makan halal terkurasi di sekitar Anda, dan dapatkan pendampingan sertifikasi halal gratis bagi pelaku usaha kuliner.</p>
+            <div class="space-x-4">
+                <a href="#direktori" class="bg-white text-emerald-700 font-semibold px-6 py-3 rounded-lg shadow hover:bg-emerald-50 transition">Cari Kuliner Halal</a>
+                <a href="#daftar-halal" class="bg-emerald-800 border border-emerald-500 text-white font-semibold px-6 py-3 rounded-lg shadow hover:bg-emerald-900 transition">Daftarkan Usaha Anda</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. DIREKTORI KULINER -->
+    <section id="direktori" class="max-w-6xl mx-auto px-4 py-12">
+        <div class="text-center mb-10">
+            <h3 class="text-2xl font-bold text-slate-800">Direktori Kuliner Halal</h3>
+            <p class="text-slate-600">Pilihan tempat makan yang sudah terverifikasi kehalalannya.</p>
+        </div>
+
+        <!-- Grid Kartu Tempat Makan -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            
+            <!-- Item 1 -->
+            <div class="bg-white rounded-xl shadow-md overflow-hidden border border-slate-100">
+                <div class="p-5">
+                    <span class="bg-emerald-100 text-emerald-800 text-xs font-semibold px-2.5 py-0.5 rounded">Bakso & Mie</span>
+                    <h4 class="text-lg font-bold mt-2">Bakso Berkah Pak Joko</h4>
+                    <p class="text-slate-500 text-sm mt-1">📍 Jl. Melati No. 12, Jakarta</p>
+                    <div class="mt-4 pt-4 border-t border-slate-100 flex justify-between items-center">
+                        <span class="text-xs text-emerald-600 font-medium">✔ Halal Resmi (ID32110...)</span>
+                        <a href="#" class="text-sm font-semibold text-emerald-700 hover:underline">Detail &rarr;</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Item 2 -->
+            <div class="bg-white rounded-xl shadow-md overflow-hidden border border-slate-100">
+                <div class="p-5">
+                    <span class="bg-emerald-100 text-emerald-800 text-xs font-semibold px-2.5 py-0.5 rounded">Makanan Berat</span>
+                    <h4 class="text-lg font-bold mt-2">Ayam Geprek Bu Siti</h4>
+                    <p class="text-slate-500 text-sm mt-1">📍 Jl. Mawar Indah No. 5</p>
+                    <div class="mt-4 pt-4 border-t border-slate-100 flex justify-between items-center">
+                        <span class="text-xs text-emerald-600 font-medium">✔ Halal Resmi (ID32110...)</span>
+                        <a href="#" class="text-sm font-semibold text-emerald-700 hover:underline">Detail &rarr;</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Item 3 -->
+            <div class="bg-white rounded-xl shadow-md overflow-hidden border border-slate-100">
+                <div class="p-5">
+                    <span class="bg-emerald-100 text-emerald-800 text-xs font-semibold px-2.5 py-0.5 rounded">Jajanan Pasar</span>
+                    <h4 class="text-lg font-bold mt-2">Kue Subuh Nusantara</h4>
+                    <p class="text-slate-500 text-sm mt-1">📍 Pasar Sentral Blok A</p>
+                    <div class="mt-4 pt-4 border-t border-slate-100 flex justify-between items-center">
+                        <span class="text-xs text-emerald-600 font-medium">✔ Halal Resmi (ID32110...)</span>
+                        <a href="#" class="text-sm font-semibold text-emerald-700 hover:underline">Detail &rarr;</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 4. HALAMAN DAFTARKAN USAHA (CALL TO ACTION UMKM) -->
+    <section id="daftar-halal" class="bg-emerald-50 py-16 px-4 border-t border-emerald-100">
+        <div class="max-w-4xl mx-auto bg-white rounded-2xl shadow-lg p-8 md:p-12 text-center">
+            <h3 class="text-2xl md:text-3xl font-bold text-slate-800 mb-4">Punya Usaha Kuliner? Yuk, Daftarkan Sertifikat Halalnya!</h3>
+            <p class="text-slate-600 mb-8 max-w-2xl mx-auto">Tingkatkan kepercayaan pelanggan, luaskan jangkauan pasar, dan kembangkan bisnis kuliner Anda bersama pendampingan resmi.</p>
+            
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <!-- Ubah nomor WhatsApp di bawah dengan nomor WhatsApp Anda -->
+                <a href="https://wa.me/6281234567890?text=Halo%2C%20saya%20ingin%20dibantu%20mendaftarkan%20sertifikasi%20halal%20untuk%20usaha%20saya." 
+                   target="_blank" 
+                   class="bg-emerald-600 hover:bg-emerald-700 text-white font-bold px-8 py-3 rounded-xl shadow transition flex items-center justify-center gap-2">
+                    💬 Daftar / Konsultasi via WhatsApp
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. FOOTER -->
+    <footer class="bg-slate-900 text-slate-400 py-8 text-center text-sm">
+        <p>&copy; 2026 JajanHalal.id. Dibangun untuk Mendukung Kuliner Halal & UMKM Lokal.</p>
+    </footer>
+
+</body>
+</html>
